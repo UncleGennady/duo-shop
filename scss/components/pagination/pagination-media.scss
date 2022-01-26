@@ -1,0 +1,31 @@
+@include desktop {
+    .pagination-main {
+        nav {
+            width: 78%;
+        }
+    }
+}
+
+@include laptop {
+    .pagination-main {
+        nav {
+            width: 70%;
+        }
+    }
+}
+
+@include tablet {
+    .pagination-main {
+        nav {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .pagination-main {
+        nav {
+            width: 90%;
+        }
+    }
+}

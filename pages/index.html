@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../style/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row justify-content-between ">
+                    <div class="header__number col d-flex align-items-center col-8">
+                        <div class="icon pb-2 pe-3 ps-1 ">
+                            <img src="./../img/icons/tell.svg" alt="#">
+                        </div>
+
+                        <p class="m-0 pb-1 ">+33 (0)4 99 63 20 50</p>
+
+                    </div>
+                    <div class="header__language col text-end d-flex justify-content-end align-items-center col-4">
+                        <div class="icon pb-1">
+                            <img src="./../img/icons/Vector.svg" alt="#">
+                        </div>
+                        <select class="bg-transparent border-0">
+                            <option selected>English</option>
+                            <option value="1">Русский</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light header__main ">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="./../img/images/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                    <form class="d-flex header__search">
+                        <input class="form-control me-2 header__search-input" type="search " placeholder="Search " aria-label="Search ">
+                        <button class="header__search-button " type="submit "><img src="./../img/icons/icn_search .svg" alt="#"></button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-xxl">
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="header-color custom-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                                <img class="rotate270" src="./../img/icons/icn_arrow.svg" alt="#">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="header-color custom-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Applications
+                                <img class="rotate270" src="./../img/icons/icn_arrow.svg" alt="#">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-color">
+                            <a class="header-color active custom-hover" aria-current="page" href="#">Documentation</a>
+                        </li>
+
+                    </ul>
+                    <ul class="mb-0 p-0 ms-auto">
+                        <li class="d-flex justify-content-end align-items-center header__icon">
+                            <a class="custom-hover-icon d-flex align-items-center justify-content-center" href="#"><img src="./../img/icons/user.svg" alt="#"></a>
+                            <a class="custom-hover-icon d-flex align-items-center justify-content-center pe-1" href=" # "><img src="./../img/icons/shop.svg " alt="# "></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="search">
+            <div class="container">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb gap-md m-0 ">
+                            <li class="breadcrumb-item active" aria-current="page">Products</li>
+                            <li><img src="./../img/icons/line.svg" alt="#"></li>
+                            <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
+                            <li><img src="./../img/icons/line.svg" alt="#"></li>
+                            <li class="breadcrumb-item"><a href="#">Products</a></li>
+                        </ol>
+                    </nav>
+                    <h1 class="m-0">Display Wall</h1>
+                    <div class="search__bot justify-content-between gap-xl">
+                        <div class="dropdown search__dropdown d-flex justify-content-center align-items-center">
+                            <a class="header-color custom-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Display Wall<img src="./../img/icons/icn_arrow.svg" alt="#">
+                        </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <form class="search__form d-flex  position-relative">
+                            <input class="w-100" type="search " placeholder="Search " aria-label="Search ">
+                            <button class="search__button position-absolute right0" type=" submit "><img src="./../img/icons/icn_search .svg " alt="# "></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="container">
+                <div class="row">
+                    <div class="catalog__slide-wrapper catalog__slide-wrapper-hide-adaptive col ">
+                        <div class="catalog__slide-left">
+
+                            <div class="catalog__reset d-flex ">
+                                <p>23 Results</p>
+                                <a href="#"><img src="./../img/icons/icon_close_xxs.svg" alt="#">Clear all Filters</a>
+                            </div>
+                            <button class="catalog__filters-adaptive-button accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                Filters
+                            </button>
+                            <div class="catalog__filters-adaptive accordion-collapse collapse show" id="collapseNine" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                <div class="catalog__list-groups">
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Subcategory
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Xpressions <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Xtension <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Virage <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Contour <span>(4)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Xperience <span>(4)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            Type
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Pop-up <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Tubar <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Table top <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Features
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Backlit <span>(7)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        TV Mount <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Shelving <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Arch <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Double sided <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            Width
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        2.5 <span>(7)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        5 <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        8 <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        10 <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        20 <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                            Height
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        4 <span>(7)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        8 <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        10 <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                            Form
+                                        </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Straight <span>(7)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Curved <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                            Price Range
+                                        </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse show" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        550-699 <span>(27)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        700-999 <span>(38)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        1000-1999 <span>(48)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        2000-3999 <span>(8)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        4000+ <span>(8)</span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                    <div class="list-group">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                            Set-up Time
+                                        </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse show" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                            <label class="list-group-item accordion-collapse collapse show">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        1+ (Fast) <span>(27)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        5+ (Easy) <span>(38)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        10+ (Average) <span>(48)</span>
+                                        </label>
+                                            <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        20+ (Expert) <span>(8)</span>
+                                        </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-line"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="catalog__slide-wrapper catalog__slide-wrapper-width-adaptive">
+                        <div class="catalog__slide-right d-flex flex-wrap ">
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-green d-inline-block">
+                                        <p class="m-0 text-white">NEW</p>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-hot d-flex justify-content-center gap-sm">
+                                        <div class="index-hot__icon d-flex align-items-center"><img src="./../img/icons/fire.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-hot__text">
+                                                <p class="m-0 font-size_index_xl">BEST</p>
+                                                <p class="m-0 font-size_index_lg">SELLER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index-like d-flex justify-content-center gap-sm">
+                                        <div class="index-like__icon d-flex align-items-center"><img src="./../img/icons/Subtract.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-like__text">
+                                                <p class="m-0 font-size_index_md">Team's</p>
+                                                <p class="m-0 font-size_index_sm">favorite</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img2.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img2.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img3.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img3.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-hot d-flex justify-content-center gap-sm">
+                                        <div class="index-hot__icon d-flex align-items-center"><img src="./../img/icons/fire.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-hot__text">
+                                                <p class="m-0 font-size_index_xl">BEST</p>
+                                                <p class="m-0 font-size_index_lg">SELLER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img2.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img2.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-green d-inline-block">
+                                        <p class="m-0 text-white">NEW</p>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img3.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img3.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-green d-inline-block">
+                                        <p class="m-0 text-white">NEW</p>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-hot d-flex justify-content-center gap-sm">
+                                        <div class="index-hot__icon d-flex align-items-center"><img src="./../img/icons/fire.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-hot__text">
+                                                <p class="m-0 font-size_index_xl">BEST</p>
+                                                <p class="m-0 font-size_index_lg">SELLER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index-like d-flex justify-content-center gap-sm">
+                                        <div class="index-like__icon d-flex align-items-center"><img src="./../img/icons/Subtract.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-like__text">
+                                                <p class="m-0 font-size_index_md">Team's</p>
+                                                <p class="m-0 font-size_index_sm">favorite</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img2.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img2.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img3.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img3.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-green d-inline-block">
+                                        <p class="m-0 text-white">NEW</p>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-hot d-flex justify-content-center gap-sm">
+                                        <div class="index-hot__icon d-flex align-items-center"><img src="./../img/icons/fire.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-hot__text">
+                                                <p class="m-0 font-size_index_xl">BEST</p>
+                                                <p class="m-0 font-size_index_lg">SELLER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index-like d-flex justify-content-center gap-sm">
+                                        <div class="index-like__icon d-flex align-items-center"><img src="./../img/icons/Subtract.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-like__text">
+                                                <p class="m-0 font-size_index_md">Team's</p>
+                                                <p class="m-0 font-size_index_sm">favorite</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img2.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img2.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img3.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img3.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-green d-inline-block">
+                                        <p class="m-0 text-white">NEW</p>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                    <div class="index-hot d-flex justify-content-center gap-sm">
+                                        <div class="index-hot__icon d-flex align-items-center"><img src="./../img/icons/fire.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-hot__text">
+                                                <p class="m-0 font-size_index_xl">BEST</p>
+                                                <p class="m-0 font-size_index_lg">SELLER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="index-like d-flex justify-content-center gap-sm">
+                                        <div class="index-like__icon d-flex align-items-center"><img src="./../img/icons/Subtract.svg" alt="#"></div>
+                                        <div>
+                                            <div class="index-like__text">
+                                                <p class="m-0 font-size_index_md">Team's</p>
+                                                <p class="m-0 font-size_index_sm">favorite</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img2.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img2.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                            <a class="catalog__item d-block overflow-hidden position-relative" href="#">
+                                <div class="index-group d-flex flex-wrap position-absolute gap-sm">
+                                </div>
+                                <div class="catalog__item-img d-flex pb-4">
+                                    <div class="d-flex">
+                                        <img class="opacity-custom-1" src="./../img/images/img3.svg" alt="#">
+                                        <img class="opacity-custom-2" src="./../img/images/img3.svg" alt="#">
+                                    </div>
+                                </div>
+                                <h2 class="text-center">
+                                    Contour 10x4
+                                    <span class="d-block">
+                                            8123,99 €
+                                        </span>
+                                </h2>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="pagination-main">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <nav class="d-flex justify-content-between flex-wrap" aria-label="Page navigation example">
+                        <ul class="pagination gap-lg flex-wrap ">
+                            <li class="page-item">
+                                <a class="page-link-custom" href="#"><img src="./../img/icons/leftarrow.svg" alt="#"></a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <p>Page</p>
+                            </li>
+                            <li class="page-item">
+                                <div class="number_page">
+                                    <p>1</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <p>of 128</p>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link-custom" href="#"><img src="./../img/icons/rightarrow.svg" alt="#"></a>
+                            </li>
+                        </ul>
+                        <div>
+                            <li class="nav-item dropdown d-flex align-items-center">
+                                <a class="custom-hover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    50
+                                    <img class="rotate270" src="./../img/icons/icn_arrow.svg" alt="#">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">5</a></li>
+                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <ul class="footer-top__contacts m-0">
+                        <li class="footer-top__logo d-flex p-b">
+                            <a href="#"><img src="./../img/images/footer-logo.svg" alt="#"></a>
+                        </li>
+                        <li class="footer-top__adres d-flex gap-md">
+                            <div><img src="./../img/icons/adres.svg" alt="#"></div>
+                            <!-- <p class="m-0">344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</p> -->
+                            <a href="#">344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</a>
+                        </li>
+                        <li class="footer-top__tell d-flex gap-md">
+                            <div><img src="./../img/icons/phone.svg" alt="#"></div>
+                            <!-- <p class="m-0">+33 (0)4 99 63 20 50</p> -->
+                            <a href="tel:+330499632050">+33 (0)4 99 63 20 50</a>
+                        </li>
+                        <li class="footer-top__letter d-flex gap-md">
+                            <div><img src="./../img/icons/letter.svg" alt="#"></div>
+                            <!-- <p class="m-0">sales@duodisplay.com</p> -->
+                            <a href="#">sales@duodisplay.com</a>
+                        </li>
+                        <li class="footer-top__france d-flex">
+                            <div><img src="./../img/icons/france.svg" alt="#"></div>
+                        </li>
+                    </ul>
+                    <nav class="footer-top__nav d-flex flex-wrap">
+                        <ul class="p-0">
+                            <li>
+                                <h2>Products</h2>
+                            </li>
+                            <li>
+                                <a href="#">Banner stands</a>
+                            </li>
+                            <li>
+                                <a href="#">Display Wall</a>
+                            </li>
+                            <li>
+                                <a href="#">Counters</a>
+                            </li>
+                            <li>
+                                <a href="#">Outdoor</a>
+                            </li>
+                            <li>
+                                <a href="#">Frames</a>
+                            </li>
+                            <li>
+                                <a href="#">Stands</a>
+                            </li>
+                            <li>
+                                <a href="#">Outdoor</a>
+                            </li>
+                            <li>
+                                <a href="#">Frames</a>
+                            </li>
+                            <li>
+                                <a href="#">Stands</a>
+                            </li>
+                        </ul>
+                        <ul class="p-0">
+                            <li>
+                                <h2>Applications</h2>
+                            </li>
+                            <li>
+                                <a href="#">Tradeshows</a>
+                            </li>
+                            <li>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">Road-shows</a>
+                            </li>
+                            <li>
+                                <a href="#">Decoration</a>
+                            </li>
+                            <li>
+                                <a href="#">Retail</a>
+                            </li>
+                            <li>
+                                <a href="#">Printing</a>
+                            </li>
+                        </ul>
+                        <ul class="p-0">
+                            <li>
+                                <h2>My Profile</h2>
+                            </li>
+                            <li>
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Orders</a>
+                            </li>
+                            <li>
+                                <a href="#">Quotes</a>
+                            </li>
+                            <li>
+                                <a href="#">My Contacts</a>
+                            </li>
+                        </ul>
+                        <ul class="p-0">
+                            <li>
+                                <h2>Duo Display</h2>
+                            </li>
+                            <li>
+                                <a href="#">About Duo</a>
+                            </li>
+                            <li>
+                                <a href="#">General terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Warranty</a>
+                            </li>
+                            <li>
+                                <a href="#">Legal notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-top__newsletter d-flex flex-wrap">
+                        <h2>Newsletter</h2>
+                        <form>
+                            <label class="footer-top__email">
+                                <input class="border-0 bg-transparent" type="email" placeholder="Your email address">
+                                    <img src="./../img/icons/icn_send.svg" alt="#">
+                            </label>
+                        </form>
+                        <div class="footer-top__language d-flex">
+                            <div class="icon d-flex align-items-center">
+                                <img src="./../img/icons/icn_lang.svg" alt="#">
+                            </div>
+                            <select class="bg-transparent border-0">
+                                <option selected>English</option>
+                                <option value="1">Русский</option>
+                            </select>
+                        </div>
+                        <ul class="p-0 m-0 d-flex justify-content-between flex-wrap footer-top__socials">
+                            <li>
+                                <a href="#"><img src="./../img/icons/1.svg" alt="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./../img/icons/2.svg" alt="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./../img/icons/3.svg" alt="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./../img/icons/4.svg" alt="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./../img/icons/5.svg" alt="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./../img/icons/6.svg" alt="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-bot__content d-flex gap-xxl">
+                        <p class="m-0">© 2021 Duo Industrie. All rights reserved. From Duo with</p>
+                        <div><img src="./../img/icons/heart.svg" alt="#"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

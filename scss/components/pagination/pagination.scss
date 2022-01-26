@@ -1,0 +1,40 @@
+.pagination-main {
+    padding-bottom: 60px;
+    font-size: $font-size_xl;
+    nav {
+        width: 78%;
+    }
+    p {
+        margin: 0;
+        color: $catalog-reset-color;
+    }
+    .page-link-custom {
+        padding: 9px 30px;
+        border: 0;
+        border-radius: 100px;
+        background-color: $lite-grey;
+        &:hover,
+         :active {
+            background-color: $green-two;
+        }
+    }
+    .number_page {
+        background-color: $bg-white;
+        padding: 6px 30px;
+        border-radius: 100px;
+        p {
+            color: initial;
+            font-weight: 700;
+        }
+    }
+    .dropdown {
+        flex-grow: 6;
+        a {
+            padding: 7px 22px;
+            border-radius: 100px;
+            background-color: $bg-white;
+            color: $black;
+            font-weight: 700;
+        }
+    }
+}

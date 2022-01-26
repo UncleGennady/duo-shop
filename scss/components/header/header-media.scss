@@ -1,0 +1,38 @@
+@media (max-width: 991px) {
+    .header {
+        &-color {
+            .rotate270 {
+                transition: 0.3s;
+                transform: rotate(270deg);
+            }
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        &__search-button {
+            margin: 0 5px 0 0;
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        .navbar-brand {
+            margin-right: 0;
+        }
+    }
+}
+
+@include mobile_s {
+    .header {
+        button {
+            padding: 0;
+        }
+        &__search-button {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.header {
+    box-shadow: 1px 0px 10px 0px $color-shadow;
+    position: relative;
+    color: $header-color-text;
+    &__top {
+        font-size: $font-size_md;
+        background-color: $background-header__top;
+    }
+    &__main {
+        font-size: $font-size_lg;
+    }
+    &__search-button {
+        border: none;
+        transition: 0.3s;
+        background-color: transparent;
+        padding: 15px;
+        margin: 0 55px 0 13px;
+        &:hover {
+            background-color: #b5e15db6;
+            border-radius: 50%;
+        }
+    }
+    &__search-input {
+        display: none;
+        &:focus {
+            display: initial;
+        }
+    }
+    &__search {
+        &:hover,
+        &:active {
+            .header__search-input {
+                display: initial;
+            }
+        }
+    }
+}

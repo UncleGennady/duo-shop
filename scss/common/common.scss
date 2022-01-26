@@ -1,0 +1,144 @@
+body {
+    font-size: $font-size_lg;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: $font-size_xxl
+}
+
+h2 {
+    font-size: $font-size_xl;
+}
+
+main {
+    padding-top: 40px;
+    background-color: $bg-main-color;
+}
+
+.content {
+    @include flex(space-between);
+}
+
+.container {
+    max-width: $breakpoint_xxl;
+}
+
+.gap-sm {
+    gap: 5px;
+}
+
+.gap-md {
+    gap: 10px;
+}
+
+.gap-lg {
+    gap: 15px;
+}
+
+.gap-xl {
+    gap: 20px;
+}
+
+.gap-xxl {
+    gap: 30px;
+}
+
+.header-color {
+    color: $header-color-text
+}
+
+.custom-hover {
+    &:hover {
+        color: $heder-color-hover;
+        transition: 0.3s;
+    }
+}
+
+.custom-hover-icon {
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+    &:hover {
+        border-radius: 50%;
+        background-color: $heder-color-hover;
+    }
+}
+
+.right0 {
+    right: 0;
+}
+
+.box-shadow-line {
+    box-shadow: 0px 0px 0 1px $heder-color-hover;
+    margin: 0 16px;
+}
+
+.font-size_index_sm {
+    font-size: $font-size_index_sm;
+}
+
+.font-size_index_md {
+    font-size: $font-size_index_md;
+}
+
+.font-size_index_lg {
+    font-size: $font-size_index_lg;
+}
+
+.font-size_index_xl {
+    font-size: $font-size_index_xl;
+}
+
+@include desktop {
+    .container,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_xl;
+    }
+}
+
+@include laptop {
+    .container,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_lg;
+        .header__icon {
+            justify-content: start !important;
+        }
+    }
+}
+
+@include tablet {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_md;
+    }
+}
+
+@include mobile {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_sm;
+    }
+}
+
+@include mobile_s {
+    .container,
+    .container-sm {
+        max-width: $breakpoint_xsm;
+    }
+}

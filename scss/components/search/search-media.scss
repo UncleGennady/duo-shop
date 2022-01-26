@@ -1,0 +1,43 @@
+@include desktop {
+    .search {
+        &__form {
+            width: 76%;
+        }
+    }
+}
+
+@include laptop {
+    .search {
+        &__form {
+            width: 70%;
+        }
+    }
+}
+
+@include mobile {
+    .search {
+        &__bot {
+            display: block;
+        }
+        &__dropdown {
+            width: 100%;
+            margin-bottom: 100px;
+            img {
+                padding-left: 200px;
+            }
+        }
+        &__form {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile_s {
+    .search {
+        &__dropdown {
+            img {
+                padding-left: 130px;
+            }
+        }
+    }
+}

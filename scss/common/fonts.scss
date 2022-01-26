@@ -1,0 +1,15 @@
+body {
+    @extend %lato;
+}
+
+a {
+    @extend %lato;
+}
+
+.fs-xsm {
+    font-size: $font-size_xsm;
+}
+
+.fs-sm {
+    font-size: $font-size_sm;
+}

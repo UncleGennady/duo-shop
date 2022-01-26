@@ -1,0 +1,51 @@
+.search {
+    font-size: $font-size_md;
+    padding-bottom: 22px;
+    .breadcrumb {
+        padding-bottom: 10px;
+    }
+    .breadcrumb-item {
+        color: $breadcrumb-color-active;
+        a {
+            color: $breadcrumb-color;
+        }
+    }
+    h1 {
+        padding-bottom: 35px;
+    }
+    &__bot {
+        @extend %d-flex;
+    }
+    &__dropdown {
+        box-shadow: 0px 0px 3px 0px $color-shadow;
+        font-size: $font-size_lg;
+        background-color: $bg-white;
+        height: 50px;
+        width: 216px;
+        border-radius: 40px;
+        img {
+            padding-left: 80px;
+        }
+    }
+    &__form {
+        height: 50px;
+        width: 78%;
+        input {
+            padding: 0 20px 0 40px;
+            border-radius: 40px;
+            border: 0;
+            box-shadow: 0px 0px 3px 0px $color-shadow;
+        }
+    }
+    &__button {
+        border: none;
+        background-color: transparent;
+        padding: 15px;
+    }
+    .accordion-button {
+        background-color: initial;
+    }
+    .accordion-button:not(.collapsed) {
+        background-color: initial;
+    }
+}
