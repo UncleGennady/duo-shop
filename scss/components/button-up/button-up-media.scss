@@ -1,0 +1,20 @@
+@include desktop {
+    .button-up {
+        bottom: 60px;
+        right: 60px;
+    }
+}
+
+@include tablet {
+    .button-up {
+        bottom: 80px;
+        right: 60px;
+    }
+}
+
+@include mobile {
+    .button-up {
+        bottom: 70px;
+        right: 40px;
+    }
+}

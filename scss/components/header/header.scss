@@ -34,4 +34,11 @@
             }
         }
     }
+    &__language {
+        select {
+            appearance: none;
+            background: url(./../img/icons/selecttop.svg) no-repeat right;
+            background-size: 10px;
+        }
+    }
 }

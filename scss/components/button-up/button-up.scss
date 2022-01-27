@@ -1,0 +1,18 @@
+.button-up {
+    background-color: $green-two;
+    width: 30px;
+    height: 30px;
+    z-index: 99;
+    bottom: 80px;
+    right: 80px;
+    border-radius: 50%;
+    &:hover {
+        transition: .3s;
+        box-shadow: 0 0 4px 3px $color-hot-text;
+    }
+    &:active {
+        transition: .3s;
+        background-color: $color-hot-text;
+        box-shadow: 0 0 4px 3px $green-two;
+    }
+}
